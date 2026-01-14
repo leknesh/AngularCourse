@@ -1,20 +1,41 @@
-# Angular Homes App
-- Install Angular if you don't have it installed
+# Angular Homes App (SSR Version)
 
-  `npm install -g @angular/cli`
+This is the **Server-Side Rendered** version of the Angular Homes App.
 
-- Clone this branch to your local machine
+## Setup
 
-  `git clone -b homes-app-start git@github.com:angular/codelabs.git homes-app`
+- Install dependencies
 
-- Once the code has been downloaded
+  `npm install`
 
-  `cd homes-app`
+- Start the JSON server (for API data)
 
-- Install the depencies
+  `json-server --watch db.json`
 
-  `npm install` 
+## Development
 
-- Run the application 
+- Build the application
 
-  `ng serve`
+  `npm run build`
+
+- Run the SSR server (port 4100)
+
+  `node dist/server/server.mjs`
+
+## How SSR Works
+
+| Route | Render Mode | Description |
+|-------|-------------|-------------|
+| `/` (Home) | Prerender | Built at build time as static HTML |
+| `/details/:id` | Server | Rendered fresh on each request |
+
+## Key SSR Files
+
+- `src/server.ts` - Express server
+- `src/main.server.ts` - Server bootstrap
+- `src/app/app.config.server.ts` - Server providers
+- `src/app/app.routes.server.ts` - Route render modes
+
+## Compare with CSR
+
+The client-side rendered version is in `../homes-app` and runs on port 4200 with `ng serve`.
