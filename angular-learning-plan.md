@@ -11,7 +11,8 @@ Given your C#/Android background, here's an accelerated plan:
 You already know C# - TypeScript is almost identical. Focus on differences only:
 
 - 📺 [TypeScript in 100 Seconds - Fireship](https://www.youtube.com/watch?v=zQnBQ4tB3ZA) (2 min)
-- 📺 [TypeScript for C# Developers](https://www.youtube.com/watch?v=1v9-ANa6AXU) (15 min)
+- 📺 [TypeScript for C# Developers](https://www.youtube.com/watch?v=MRLUylSe6Dc&list=PLo7rGmaumEKAOREGWbk6zlRTBn6fcyol4) (5 parts/15 min)
+- 📺 [TypeScript tutorial for beginners](https://www.youtube.com/watch?v=d56mG7DezGs) (64 min)
 - 📖 [TS for Java/C# Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-oop.html)
 
 **Key differences from C#:**
